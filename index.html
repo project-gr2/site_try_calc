@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>calculator</title>
+
+ </head>
+ <body> 
+<h1 align=center>Калькулятор</h1>
+     Простий консольний додаток на Pyton:<br>
+
+x = float(input("Введіть перше число: "))<br>
+y = float(input("Введіть перше число: "))<br>
+action = input("Дія (+ - * /): ")<br>
+
+if action == "+":<br>
+&nbsp &nbsp &nbsp  z = x + y<br>
+elif action == "-":<br>
+    z = x - y<br>
+elif action == "*":<br>
+    z = x * y<br>
+elif action == "/":<br>
+    if y == 0:<br>
+        z = "На нуль ділити не можна!"<br>
+    else:<br>
+        z = round(x / y, 2)<br>
+else:<br>
+    z = "Помилка"<br>
+
+print(x, " ", action, " ", y, " = ", z)<br>
+ </body>
+</html>

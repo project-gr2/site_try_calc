@@ -1,32 +1,35 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>calculator</title>
-  </head>
+ <head>
+  <meta charset="utf-8">
+  <title>calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+
  <body> 
-   <h1 align=center>Калькулятор</h1>
-   <h2> Простий консольний додаток на Python:</h2>
-     <br>
+	<h1 align=center>Калькулятор</h1>
+	<h2>    Простий консольний додаток на Python:</h2>
 
-   x = float(input("Введіть перше число: "))<br>
-   y = float(input("Введіть перше число: "))<br>
-   action = input("Дія (+ - * /): ")<br>
-
-   if action == "+":<br>
-   &nbsp &nbsp &nbsp z = x + y<br>
-   elif action == "-":<br>
-   &nbsp &nbsp &nbsp z = x - y<br>
-   elif action == "*":<br>
-   &nbsp &nbsp &nbsp   z = x * y<br>
-   elif action == "/":<br>
-   &nbsp &nbsp &nbsp   if y == 0:<br>
-   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    z = "На нуль ділити не можна!"<br>
-   &nbsp &nbsp &nbsp    else:<br>
-   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp     z = round(x / y, 2)<br>
-   else:<br>
-   &nbsp &nbsp &nbsp   z = "Помилка"<br>
-   print(x, " ", action, " ", y, " = ", z)<br>
-
-  </body>
+	<p> x = float(input("Введіть перше число: "))<br>
+	y = float(input("Введіть друге число: "))<br>
+	action = input("Дія (+ - * /): ")<br><br>
+	if action == "+":<br>
+	&nbsp &nbsp &nbsp  z = x + y<br>
+	elif action == "-":<br>
+	&nbsp &nbsp &nbsp   z = x - y<br>
+	elif action == "*":<br>
+	&nbsp &nbsp &nbsp  z = x * y<br>
+	elif action == "/":<br>
+	&nbsp &nbsp &nbsp  if y == 0:<br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  z = "На нуль ділити не можна!"<br>
+	&nbsp &nbsp &nbsp   else:<br>
+	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  z = round(x / y, 2)<br>
+	else:<br>
+	&nbsp &nbsp &nbsp   z = "Помилка"<br>
+	<br>
+	print(x, " ", action, " ", y, " = ", z)</p>
+	<p>
+	<br><br>
+   <p class='paragraf'>Зовсім не важливо, чи щоб вийшло добре з першого разу. Життєво важливо, щоб добре вийшло з останнього.</p>
+ </body>
 </html>
